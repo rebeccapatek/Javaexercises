@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Just doing some Javascript Exercises</title>
+    
+</head>
+
+<body>
+    </main>
+
+    <script type="module" src="./practice.js"></script>
+</body>
+
+</html>
