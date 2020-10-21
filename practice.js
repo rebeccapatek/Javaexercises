@@ -78,16 +78,23 @@ const theSentenceWithParameters = go("forward", 80)
 console.log(theSentenceWithParameters);
 
 //Evens or Odds
-const evenOrOdd = (numberArray) => {
-    for (let num of numberArray) {
-        const decide = num % 2
-        if (decide === 0) {
-            return ("Even")
+let whichArray = [];
+const evenOrOdd = function (numberArray) {
+
+    for (let i = 0; i < numberArray.length; i++) {
+
+        if (numberArray[i] % 2 === 0) {
+            whichArray.push("Even")
         }
         else {
-            return ("Odd")
+            whichArray.push("Odd")
         }
+
+
     }
+    return whichArray;
+    console.log(whichArray);
+
 
 }
 
