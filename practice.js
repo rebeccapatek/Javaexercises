@@ -122,3 +122,15 @@ const sentence = (wordsInArray) => {
 }
 const sentenceWithoutK = sentence(filteredWords)
 console.log(sentenceWithoutK)
+//Sven
+const chanceOfCatchingFish = () => {
+    let chance = Math.random() * 3
+    if (chance <= 1) {
+        console.log("Sven hooked a Tuna")
+    }
+    else {
+        console.log("Sven came up empty-handed")
+    }
+}
+chanceOfCatchingFish();
+
