@@ -133,4 +133,50 @@ const chanceOfCatchingFish = () => {
     }
 }
 chanceOfCatchingFish();
+//Fast Food
+const order = (sandwich, side, drink, dessert) => {
+    const meal = {
+        "side": side,
+        "sandwich": sandwich,
+        "drink": drink,
+        "dessert": dessert
+    }
+    return meal
+}
+const takeOutBag = order("Ultimate Slammer", "Potato Wedges", "Mr. Pepper", "pie")
+console.log(takeOutBag)
 
+
+const Don =
+{
+    firstName: "Donald",
+    lastName: "McLelland"
+}
+
+const rake = person => {
+    return `${person.firstName} ${person.lastName}` + " raked the leaves"
+}
+const vaccuum = person => {
+    return `${person.firstName} ${person.lastName}` + " vaccuumed the rug"
+}
+const mucked = person => {
+    return `${person.firstName} ${person.lastName}` + " mucked the pen"
+}
+const dusted = person => {
+    return `${person.firstName} ${person.lastName}` + " dusted the tchotchkes"
+}
+const shoveled = person => {
+    return `${person.firstName} ${person.lastName}` + " shoveled the garden"
+}
+console.log(rake(Don));
+const dayPlanner = (chore, person, day) => {
+    const sent = chore(person)
+    return `${sent} on ${day}`
+}
+console.log(dayPlanner(rake, Don, "Thursday"))
+console.log(dayPlanner(mucked, Don, "Tuesday"))
+const busyDay = (chore1, chore2, chore3, person, day) => {
+    const sent = chore1(person) + ", " + chore2(person) + ", " + chore3(person)
+    return `On ${day} ${sent}.`
+}
+console.log(busyDay(dusted, vaccuum, shoveled, Don, "Friday"))
