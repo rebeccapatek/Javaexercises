@@ -102,6 +102,23 @@ const evenOrOdd = function (numberArray) {
 const arrayOfNumber = [4, 4, 5, 6, 7]
 const whichIsIt = evenOrOdd(arrayOfNumber)
 console.log(whichIsIt);
+
 // work on this to return an array of evens and odds
+//Double Functions
+const words = [
+    "The", "killing", "complex", "houses",
+    "married", "kittens", "and", "single",
+    "soldiers", "and", "their", "kleptomaniacal",
+    "families"
+]
+const filteredWords = words.filter((word) => {
+    return !word.startsWith("k")
 
-
+}
+)
+console.log(filteredWords)
+const sentence = (wordsInArray) => {
+    return wordsInArray.join(" ")
+}
+const sentenceWithoutK = sentence(filteredWords)
+console.log(sentenceWithoutK)
